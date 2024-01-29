@@ -1,0 +1,11 @@
+@import url('css/common.css');
+@import url('css/homepage.css');
+@import url('css/card.css');
+@import url('css/detail.css');
+@import url('css/search.css');
+@import url('css/font.css');
+@import url('css/gmap.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

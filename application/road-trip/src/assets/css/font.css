@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'AlexandriaFLF';
+    src: url('src/assets/fonts/AlexandriaFLF.woff') format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'AlexandriaFLF';
+    src: url('src/assets/fonts/AlexandriaFLF-italic.woff') format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'AlexandriaFLF';
+    src: url('src/assets/fonts/AlexandriaFLF-bold.woff') format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'AlexandriaFLF';
+    src: url('src/assets/fonts/AlexandriaFLF-BoldItalic.woff') format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+

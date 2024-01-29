@@ -1,0 +1,92 @@
+.pages-header > .title {
+    @apply invisible sm:visible md:visible lg:visible;
+}
+
+.search-filters {
+    /*@apply grid grid-cols-12 gap-10;*/
+    /*@apply w-full bg-white;*/
+    @apply sm:w-full md:w-9/12 bg-white;
+}
+
+.search-container {
+    @apply space-y-10;
+    @apply flex flex-wrap;
+    @apply w-full;
+}
+
+.search-filters > .content {
+    /*@apply col-span-9;*/
+    @apply w-full flex flex-col justify-between px-10;
+    min-height: 200px;
+}
+
+.search-filters > .content > .title {
+    @apply font-bold;
+    font-size: 18px;
+}
+
+.search-filters > .content > .filters {
+    @apply flex flex-row space-x-4;
+}
+
+.search-filters > .content > .filters > .filter {
+    @apply bg-DesertSand text-Cultured text-center font-bold;
+    @apply flex flex-row justify-center;
+    @apply p-4 space-x-4;
+    border-radius: 10px;
+}
+
+.search-filters > .content > .filters > .filter:first-child {
+    @apply w-4/12;
+    @apply bg-DesertSand;
+}
+.search-filters > .content > .filters > .filter:nth-child(0n+2) {
+    @apply w-2/12;
+    @apply bg-DesertSand;
+}
+.search-filters > .content > .filters > .filter:nth-child(0n+3) {
+    @apply w-3/12;
+    @apply bg-DesertSand;
+}
+.search-filters > .content > .filters > .filter:nth-child(0n+4) {
+    @apply w-2/12;
+    @apply bg-DesertSand;
+}
+
+.search-content {
+    @apply w-full;
+    @apply flex flex-col lg:flex-row pt-10;
+    @apply space-y-4 sm:space-y-4 md:space-y-4 lg:space-y-0;
+    /*@apply grid grid-cols-12 gap-10;*/
+}
+
+.search-content > .filters {
+    @apply bg-white;
+    /*@apply flex flex-col p-4 w-full;*/
+    @apply flex flex-col p-10 w-full sm:w-full md:w-full lg:w-3/12 space-y-10;
+    /*@apply col-span-3;*/
+    border-radius: 10px;
+}
+
+.search-content > .results {
+    @apply flex flex-col space-y-4 px-5;
+    @apply w-full sm:w-full md:w-full lg:w-9/12;
+    /*@apply col-span-9;*/
+    border-radius: 10px;
+}
+
+
+/**
+    GLOBAL PAGES SEARCH
+ */
+
+.pages-header {
+    @apply px-10 sm:px-40 md:px-40;
+    @apply flex flex-wrap content-end;
+    @apply w-screen;
+    @apply bg-cover bg-no-repeat bg-bottom;
+    min-height: 500px;
+    max-height: 800px;
+    background-attachment: fixed;
+    background-image: var(--img-url);
+}

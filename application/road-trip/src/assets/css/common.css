@@ -1,0 +1,151 @@
+h1 {
+    @apply text-Cultured uppercase;
+    font-size: 32px !important;
+}
+
+h2 {
+    @apply text-DesertSand uppercase;
+    @apply pb-10;
+    font-size: 22px !important;
+}
+
+input[type="text"] {
+    @apply focus:outline-none;
+}
+
+.shadow-main {
+    filter: drop-shadow(1px 1px 5px rgba(217, 217, 217, 0.5));
+}
+
+.btn {
+    @apply w-full h-full;
+    border-radius: 10px;
+}
+
+.btn-sm {
+    min-height: 48px;
+    max-height: 48px;
+    min-width: 80px;
+    max-width: 48px;
+    border-radius: 10px;
+}
+
+.btn-submit {
+    @apply bg-DesertSand;
+}
+
+body {
+    min-height: 100vh;
+    transition: color 0.5s, background-color 0.5s;
+    line-height: 1.6;
+    /*font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,*/
+    /*  Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;*/
+    font-family: AlexandriaFLF, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.header {
+    @apply px-20;
+    @apply text-white;
+    @apply relative w-full bg-transparent flex justify-center h-full h-0 z-10;
+}
+
+.footer {
+    @apply bg-Jet;
+    min-height: 450px;
+}
+
+.nav {
+    @apply w-full p-8 flex justify-end;
+}
+
+.nav.navbar-menu {
+    @apply w-full p-8 flex justify-end invisible lg:visible;
+}
+
+.nav.burger-menu {
+    @apply absolute w-full h-screen bg-DesertSand p-8 flex justify-center visible lg:invisible overflow-y-hidden;
+}
+
+.nav.burger-menu > .burger-icon {
+    height: 24px;
+    width: 24px;
+    @apply visible lg:invisible;
+    @apply cursor-pointer;
+}
+
+.nav.navbar-menu > .nav-ul {
+    @apply flex flex-row;
+}
+
+.nav.burger-menu > .nav-ul {
+    @apply h-full flex flex-col;
+    @apply text-2xl;
+}
+
+.nav-li {
+}
+
+.nav.navbar-menu > .nav-ul > .nav-li > a {
+    @apply px-10 py-10;
+    @apply text-white transition hover:ease-in hover:duration-100 hover:text-GrayWeb;
+}
+
+.nav.burger-menu > .nav-ul > .nav-li {
+    @apply px-10 py-10 h-auto;
+    @apply text-white transition hover:ease-in hover:duration-100 hover:text-GrayWeb;
+}
+
+.nav.burger-menu > .nav-ul > .nav-li > a {
+    @apply px-10 py-10;
+    @apply text-white transition hover:ease-in hover:duration-100 hover:text-GrayWeb;
+}
+
+
+.hotel-container {
+    @apply sm:px-40 sm:py-20 space-y-10;
+    @apply flex flex-col items-center justify-center content-center;
+    @apply w-screen;
+
+}
+
+.title-container {
+    @apply w-full px-10 py-5 text-center;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.08);
+}
+
+.more-container {
+    @apply w-full px-10;
+    @apply flex flex-row justify-end;
+}
+
+.more-container > a {
+    @apply px-2;
+    @apply text-DesertSand font-bold;
+    @apply transition duration-300 hover:text-Cultured;
+}
+
+.list-tabs {
+    @apply flex flex-row space-x-4 invisible md:visible lg:visible;
+}
+
+.tab-content {
+    @apply py-6 px-4 uppercase border-b-2 border-transparent;
+    @apply cursor-pointer;
+    @apply transition hover:ease-in hover:duration-100 hover:text-DesertSand hover:border-b-2 hover:border-DesertSand;
+}
+
+.tab-content.current {
+    @apply border-b-2 border-DesertSand;
+}
+
+label {
+    font-size: 12px;
+}
+

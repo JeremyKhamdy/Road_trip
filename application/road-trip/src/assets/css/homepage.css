@@ -1,0 +1,81 @@
+.homepage-header {
+    @apply px-10 sm:px-40;
+    @apply flex flex-wrap content-center;
+    @apply w-screen h-screen;
+    @apply bg-cover bg-no-repeat bg-bottom;
+    background-attachment: fixed;
+    background-image: url(../../assets/images/timur-garifov-PKZtpOIMRYk-unsplash.jpg);
+}
+
+.homepage-section {
+    @apply px-10 sm:px-40 sm:py-20 space-y-10;
+    @apply flex flex-col items-center justify-center content-center;
+    @apply w-screen;
+}
+
+.search-section {
+    @apply px-5 py-20 sm:px-10 md:px-10 lg:px-20 sm:py-20 md:py-20 lg:py-40 space-y-10;
+    @apply flex flex-col items-center justify-center content-center;
+    @apply w-screen;
+}
+
+.transport-container {
+    @apply sm:px-40 sm:py-20 space-y-10;
+    @apply flex flex-col items-center justify-center content-center;
+    @apply w-screen;
+
+}
+
+.last-search {
+    @apply sm:px-20 md:px-20 lg:px-40 sm:py-20 md:py-20 lg:py-40 space-y-10;
+    @apply flex flex-col items-center justify-center content-center;
+    @apply w-screen;
+
+}
+
+.gmaps {
+    @apply bg-cover bg-top bg-no-repeat;
+    @apply lg:sticky lg:top-5 lg:z-10 !important;
+    @apply bg-DesertSand;
+    @apply brightness-50 w-full sm:w-full md:w-full lg:w-3/12;
+    @apply duration-500 hover:brightness-100;
+    background-image: url('./src/assets/images/gmaps.jpg');
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.gmaps-link {
+    @apply h-full w-full;
+
+}
+
+
+.pages-container {
+    @apply w-screen h-auto;
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2;
+}
+
+.page-container {
+    @apply col-span-1;
+    @apply w-full text-center;
+    min-height: 200px;
+    max-height: 400px;
+    @apply transition duration-500 hover:brightness-100;
+
+}
+
+.page-container:first-child {
+    @apply col-span-2;
+}
+
+.page-img {
+    @apply w-full h-full object-cover brightness-100;
+    /*@apply transition duration-500 hover:brightness-100;*/
+}
+
+.btn-img {
+    @apply hover:brightness-50 hover:text-Cultured;
+    @apply transition duration-300 bg-GrayWeb bg-opacity-40;
+}
+
+

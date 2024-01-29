@@ -1,0 +1,58 @@
+.gmap {
+    @apply w-screen h-screen;
+
+}
+
+.map-header {
+    @apply h-1/6;
+    @apply py-4;
+    @apply flex flex-row;
+    @apply overflow-x-scroll;
+    @apply bg-DesertSand;
+    height: 12%;
+}
+
+.search-container > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.map-header > .search-container {
+    @apply w-10/12;
+    @apply overflow-x-scroll;
+
+    @apply flex flex-row;
+    @apply bg-GrayWeb;
+    @apply sm:mx-10 md:mx-10 grid grid-cols-1 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-6 bg-white rounded-md shadow-main py-1;
+}
+
+.map-section {
+    @apply flex flex-wrap;
+    height: 88%;
+}
+
+/*.map-section > .filters-container {*/
+/*    @apply p-4 space-y-4;*/
+/*    @apply w-2/12 h-full;*/
+/*    @apply bg-white;*/
+/*    @apply invisible sm:invisible md:invisible lg:visible;*/
+/*}*/
+
+.filters-container {
+    @apply lg:p-4 lg:space-y-4;
+    @apply w-0 h-0 lg:w-2/12 lg:h-full;
+    @apply lg:bg-white;
+    @apply invisible sm:invisible md:invisible lg:visible;
+}
+
+.menu-filters-container {
+    @apply p-4 space-y-4;
+    @apply absolute z-10;
+    @apply sm:w-4/12 md:w-4/12 h-full;
+    @apply bg-white;
+}
+
+.map-section > .map-container {
+    @apply w-full lg:w-10/12 h-full;
+    /*@apply bg-GrayWeb;*/
+}

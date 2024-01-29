@@ -1,0 +1,113 @@
+.detail-header {
+    position: relative;
+    @apply px-10 sm:px-40 md:px-40 pb-20 space-y-2;
+    @apply flex flex-wrap content-end;
+    @apply w-screen;
+    @apply bg-cover bg-no-repeat bg-center;
+    /*font-size: 58px !important;*/
+    min-height: 500px;
+    max-height: 800px;
+    background-attachment: fixed;
+    /*filter: brightness(60%);*/
+    /*background-image: var(--img-url);*/
+}
+
+.detail-header::before {
+    content: "";
+    position: absolute;
+    background-attachment: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+    background-image: var(--img-url);
+}
+
+
+.detail-section {
+    @apply px-5 py-20 sm:px-10 md:px-10 lg:px-40 sm:py-20 md:py-20 lg:py-20 space-x-10;
+    @apply flex flex-row justify-center content-center;
+    @apply w-screen;
+}
+
+.detail-section > .img-container {
+    @apply lg:w-3/12 h-auto;
+    @apply flex flex-col space-y-2;
+}
+
+.detail-section > .img-container > img {
+    @apply object-cover;
+    max-height: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.detail-container {
+    margin-top: 0;
+}
+
+.detail-section > .detail-container {
+    @apply lg:w-9/12 h-auto;
+    @apply px-5 space-y-12;
+    @apply flex flex-col justify-start content-start items-start;
+    /*@apply border-l-2 border-GrayWeb*/
+}
+
+.detail-section > .detail-container > .info-container {
+    @apply space-y-2 px-5;
+}
+
+.detail-section > .detail-container > .schedule-container {
+    @apply space-y-2 px-5;
+}
+
+.detail-section > .detail-container > .schedule-container > .schedules {
+    @apply flex flex-col space-y-2 px-5;
+}
+
+.detail-section > .detail-container > .schedule-container > .schedules > .schedule {
+    @apply font-normal;
+}
+
+.detail-section > .detail-container > .review-container {
+    @apply px-5;
+}
+
+.detail-section > .detail-container > .review-container > .reviews {
+    @apply flex flex-col space-y-5 px-5;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review {
+    @apply flex flex-row space-x-2 p-4;
+    @apply bg-Cultured;
+    border-radius: 10px;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .photo-container {
+    @apply w-1/6;
+    @apply flex justify-around;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .photo-container > img {
+    @apply items-end;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .info-container {
+    @apply w-5/6 space-y-2;
+    @apply flex flex-col justify-between;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .info-container > .review-title {
+    @apply font-bold text-DesertSand;
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .info-container > .review-description {
+
+}
+
+.detail-section > .detail-container > .review-container > .reviews > .review > .info-container > .review-date {
+    @apply text-right;
+    @apply font-bold text-DesertSand;
+}
